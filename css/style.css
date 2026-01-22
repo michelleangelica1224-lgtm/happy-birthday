@@ -79,6 +79,8 @@ body {
   background-color: #855a5a;
 }
 
+/* Surprise Section */
+
 .title .content {
   padding: 3rem 15%;
   max-width: 100rem;
@@ -99,6 +101,8 @@ body {
   font-weight: 300;
   color: #5c3737;
 }
+
+/* Cake Section */
 
 .container {
   padding: 1rem 5%;
@@ -3567,6 +3571,8 @@ body {
   }
 }
 
+/* Wish Section */
+
 .yeay {
   padding: 1.2rem 15%;
   max-width: 100rem;
@@ -3612,6 +3618,7 @@ body {
 }
 
 /*Photos*/
+
 .photos {
   display: flex;
   justify-content: center;
@@ -3648,6 +3655,8 @@ body {
   line-height: 1.5;
   margin-top: 1rem;
 }
+
+/*Contact Section*/
 
 .contact {
   background-color: var(--primary);
@@ -3722,4 +3731,67 @@ hr {
   padding: 1rem 5%;
   color: #461d1d;
   font-size: 1rem;
+}
+
+/* Media Queries */
+/*Laptop*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+.title .content {
+  flex-wrap: wrap;
+}
+
+.container .cake {
+  flex-wrap: wrap;
+}
+
+.container .cake .yeay {
+  flex-wrap: wrap;
+}
+
+.last {
+  flex-wrap: wrap;
+}
+
+.contact .container {
+  flex-wrap: wrap;
+}
+
+
+/*Mobile*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.title .content {
+  flex-wrap: wrap;
+}
+
+.container .cake {
+  flex-wrap: wrap;
+}
+
+.container .cake .yeay {
+  flex-wrap: wrap;
+}
+
+.last {
+  flex-wrap: wrap;
+}
+
+.contact .container {
+  flex-wrap: wrap;
 }
