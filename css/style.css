@@ -3733,29 +3733,157 @@ hr {
   font-size: 1rem;
 }
 
-/*Tablet*/
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
   }
+
+  .home .content {
+    padding: 1.2rem 5%;
+  }
+
+  .title .content {
+    padding: 3rem 5%;
+  }
+
+  .home .content h1 {
+    font-size: 3rem;
+  }
+
+  .title .content h1 {
+    font-size: 3rem;
+  }
+
+  .yeay h1,
+  .yeay .item,
+  .yeay .item2 {
+    margin-left: 0;
+  }
+
+  .yeay h2 {
+    margin-left: 0;
+  }
+
+  .contact .container h2 {
+    margin-left: 0;
+  }
+
+  .contact .container .contact-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .contact .container .contact-wrapper .contact-form .form-group input,
+  textarea {
+    margin-left: 0;
+  }
+
+  .contact .container .contact-wrapper .contact-form button {
+    margin-left: 0;
+  }
+
+  .last {
+    padding: 1.4rem 5%;
+  }
+
+  .photos img {
+    width: 200px;
+  }
 }
 
-.title .content {
-  flex-wrap: wrap;
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .content h1 {
+    font-size: 2rem;
+  }
+
+  .home .content p {
+    font-size: 1rem;
+  }
+
+  .title .content h1 {
+    font-size: 2rem;
+  }
+
+  .title .content p {
+    font-size: 1rem;
+  }
+
+  .yeay h1 {
+    font-size: 1.8rem;
+  }
+
+  .yeay h2 {
+    font-size: 1.5rem;
+  }
+
+  .yeay .item,
+  .yeay .item2 {
+    font-size: 0.9rem;
+  }
+
+  .contact .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .photos {
+    gap: 1rem;
+  }
+
+  .photos img {
+    width: 150px;
+  }
+
+  .last .p1,
+  .last .p2 {
+    font-size: 0.9rem;
+  }
+
+  .cake {
+    transform: scale(0.7);
+  }
 }
 
-.container .cake {
-  flex-wrap: wrap;
-}
+/* Small Devices */
+@media (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
 
-.container .cake .yeay {
-  flex-wrap: wrap;
-}
+  .home .content {
+    padding: 1rem 2%;
+  }
 
-.last {
-  flex-wrap: wrap;
-}
+  .title .content {
+    padding: 2rem 2%;
+  }
 
-.contact .container {
-  flex-wrap: wrap;
+  .yeay {
+    padding: 1rem 2%;
+  }
+
+  .last {
+    padding: 1rem 2%;
+  }
+
+  .contact {
+    padding: 1rem 2%;
+  }
+
+  .photos img {
+    width: 120px;
+  }
 }
